@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Content Fact Checker - Überprüfen Sie Fakten, Zahlen und Statistiken mit KI-Unterstützung">
+    <meta name="keywords" content="fact checker, fakten prüfen, statistik checker, wahrheit prüfen">
+    <meta name="author" content="Your Name">
+    
+    <meta property="og:title" content="Content Fact Checker">
+    <meta property="og:description" content="Überprüfen Sie Fakten, Zahlen und Statistiken mit KI-Unterstützung">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.vercel.app">
+    
+    <title>Content Fact Checker - Fakten prüfen</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Content Fact Checker</h1>
+            <p class="subtitle">Überprüfen Sie Fakten, Zahlen und Statistiken mit KI-Unterstützung</p>
+        </header>
+        
+        <main>
+            <section class="input-section">
+                <textarea 
+                    id="contentInput" 
+                    placeholder="Fügen Sie hier Ihren Text ein, der überprüft werden soll...
+
+Beispiel: 'Deutschland hat 83 Millionen Einwohner und ist das bevölkerungsreichste Land der EU. Die Arbeitslosenquote liegt bei 3,5%. Berlin hat mehr Einwohner als Hamburg und München zusammen.'"
+                    aria-label="Text zur Faktenprüfung"></textarea>
+                
+                <div class="button-group">
+                    <button onclick="checkContent()" aria-label="Fakten prüfen">
+                        🔍 Fakten prüfen
+                    </button>
+                    <button class="secondary" onclick="loadExample()" aria-label="Beispiel laden">
+                        📝 Beispiel laden
+                    </button>
+                    <button class="secondary" onclick="clearAll()" aria-label="Zurücksetzen">
+                        🗑️ Zurücksetzen
+                    </button>
+                </div>
+            </section>
+
+            <div class="loading" role="status" aria-live="polite">
+                <div class="spinner"></div>
+                <p>Analysiere Content und überprüfe Fakten...</p>
+            </div>
+
+            <section class="results-section" id="results" aria-live="polite">
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2025 Content Fact Checker | <a href="https://github.com/yourusername/content-fact-checker" target="_blank" rel="noopener">GitHub</a></p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
