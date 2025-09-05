@@ -1,0 +1,27 @@
+{
+  "name": "content-fact-checker",
+  "version": "1.0.0",
+  "description": "Content Fact Checker - Überprüfen Sie Fakten, Zahlen und Statistiken",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'No build step required'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "fact-checker",
+    "verification",
+    "statistics",
+    "truth-checking"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/content-fact-checker.git"
+  },
+  "homepage": "https://your-domain.vercel.app",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
